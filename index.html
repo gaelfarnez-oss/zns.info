@@ -95,41 +95,41 @@
         /* Hero Section */
         .hero-section {
             background-color: #ffffff;
-            padding: 40px 0;
+            padding: 20px 0;
         }
 
         .content-card {
-            border: 2px solid rgb(200, 191, 191);
+            border: 1px solid rgb(200, 191, 191);
             border-radius: 10px;
-            padding: 30px 40px;
+            padding: 20px 30px;
             background: white;
         }
 
         .welcome-text {
             color: #714444;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 12px;
             letter-spacing: 2px;
         }
 
         .home-title {
-            font-size: 3.5rem;
+            font-size: 2.8rem;
             color: #714444;
             font-weight: bold;
-            margin: 20px 0;
+            margin: 15px 0;
         }
 
         .description-text {
-            font-size: 16px;
-            line-height: 1.6;
+            font-size: 14px;
+            line-height: 1.5;
             color: #666;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .email-form {
-            border: 2px solid rgb(200, 191, 191);
+            border: 1px solid rgb(200, 191, 191);
             border-radius: 50px;
-            padding: 5px;
+            padding: 3px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -139,10 +139,10 @@
         .email-input {
             border: none;
             outline: none;
-            padding: 12px 20px;
+            padding: 10px 20px;
             flex: 1;
             border-radius: 50px;
-            font-size: 16px;
+            font-size: 14px;
         }
 
         .brochure-btn {
@@ -150,9 +150,10 @@
             color: white;
             background-color: #50a4fb;
             border-radius: 50px;
-            padding: 12px 30px;
+            padding: 8px 25px;
             transition: background-color 0.3s ease;
             white-space: nowrap;
+            font-size: 14px;
         }
 
         .brochure-btn:hover {
@@ -162,37 +163,49 @@
 
         .hero-image {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 8px;
             height: auto;
         }
 
-        /* Stats Section */
+        /* Stats Section - Version verticale */
         .stats-section {
-            padding: 20px 0 40px 0;
+            padding: 10px 0 20px 0;
         }
 
         .stats-container {
             background-color: black;
-            border-radius: 50px;
+            border-radius: 40px;
             padding: 20px 30px;
+            width: 60%;
+            margin: 0 auto;
         }
 
         .stat-item {
             text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
         }
 
         .stat-number {
-            font-size: 35px;
+            font-size: 32px;
             font-weight: bold;
             color: white;
             display: block;
+            margin-bottom: 5px;
         }
 
         .stat-label {
             color: white;
             font-size: 14px;
             display: block;
-            margin-top: 5px;
+            opacity: 0.9;
         }
 
         /* Remove bottom spacing */
@@ -214,11 +227,16 @@
         /* Responsive Adjustments */
         @media (max-width: 991px) {
             .home-title {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             
             .content-card {
-                padding: 20px 25px;
+                padding: 15px 20px;
+            }
+            
+            .stats-container {
+                width: 80%;
+                padding: 20px;
             }
         }
 
@@ -240,33 +258,36 @@
             }
             
             .home-title {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .content-card {
-                padding: 20px;
+                padding: 15px;
                 margin-bottom: 0;
             }
             
             .email-form {
                 flex-direction: column;
                 border-radius: 30px;
-                gap: 10px;
+                gap: 8px;
             }
             
             .email-input {
                 width: 100%;
                 text-align: center;
+                padding: 8px 15px;
             }
             
             .brochure-btn {
                 text-align: center;
                 width: 100%;
+                padding: 8px 15px;
             }
             
             .stats-container {
+                width: 90%;
                 border-radius: 30px;
-                padding: 20px;
+                padding: 15px;
             }
             
             .stat-number {
@@ -274,45 +295,60 @@
             }
             
             .stat-label {
-                font-size: 12px;
+                font-size: 13px;
             }
             
             .stats-section {
-                padding: 20px 0 20px 0;
+                padding: 10px 0 15px 0;
+            }
+            
+            .stat-item {
+                margin-bottom: 20px;
+                padding-bottom: 15px;
             }
         }
 
         @media (max-width: 576px) {
             .hero-section {
-                padding: 20px 0;
+                padding: 15px 0;
             }
             
             .home-title {
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
             
             .description-text {
-                font-size: 14px;
-            }
-            
-            .welcome-text {
                 font-size: 12px;
             }
             
+            .welcome-text {
+                font-size: 10px;
+            }
+            
             .content-card {
-                padding: 15px;
+                padding: 12px;
             }
             
             .stats-container {
+                width: 95%;
                 padding: 15px;
             }
             
             .stat-number {
-                font-size: 24px;
+                font-size: 26px;
+            }
+            
+            .stat-label {
+                font-size: 12px;
             }
             
             .stats-section {
-                padding: 10px 0 15px 0;
+                padding: 5px 0 10px 0;
+            }
+            
+            .stat-item {
+                margin-bottom: 15px;
+                padding-bottom: 12px;
             }
         }
 
@@ -322,7 +358,10 @@
         }
         
         .stat-item:hover {
-            transform: translateY(-5px);
+            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding-left: 15px;
         }
         
         .brochure-btn {
@@ -331,7 +370,7 @@
         
         .brochure-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(80, 164, 251, 0.3);
+            box-shadow: 0 3px 10px rgba(80, 164, 251, 0.3);
         }
         
         .hero-image {
@@ -403,15 +442,14 @@
             <div class="content-card">
                 <div class="row align-items-center">
                     <!-- Left Content -->
-                    <div class="col-lg-7 mb-4 mb-lg-0">
+                    <div class="col-lg-7 mb-3 mb-lg-0">
                         <div class="gauche">
                             <span class="welcome-text">WELCOME TO KEYSTONE HOMES...</span>
                             <div class="home">
                                 <h1 class="home-title">FIND PERFECT HOME</h1>
                                 <p class="description-text">
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                    Pariatur nobis quia temporibus expedita nesciunt enim, facere iure quae iusto facilis, 
-                                    eius mollitia laudantium! Velit itaque ea assumenda numquam perferendis laudantium.
+                                    Pariatur nobis quia temporibus expedita nesciunt enim.
                                 </p>
                                 <div class="email-form">
                                     <input type="email" class="email-input" placeholder="Enter your email">
@@ -432,35 +470,25 @@
         </div>
     </section>
 
-    <!-- Stats Section -->
+    <!-- Stats Section - Version verticale -->
     <section class="stats-section">
         <div class="container">
             <div class="stats-container">
-                <div class="row text-center">
-                    <div class="col-6 col-md-3 mb-3 mb-md-0">
-                        <div class="stat-item">
-                            <strong class="stat-number">40K+</strong>
-                            <span class="stat-label">Customer</span>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 mb-3 mb-md-0">
-                        <div class="stat-item">
-                            <strong class="stat-number">20K+</strong>
-                            <span class="stat-label">Registration done</span>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="stat-item">
-                            <strong class="stat-number">15K</strong>
-                            <span class="stat-label">Units sold till date</span>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <div class="stat-item">
-                            <strong class="stat-number">23K+</strong>
-                            <span class="stat-label">Properties available</span>
-                        </div>
-                    </div>
+                <div class="stat-item">
+                    <strong class="stat-number">40K+</strong>
+                    <span class="stat-label">Customers</span>
+                </div>
+                <div class="stat-item">
+                    <strong class="stat-number">20K+</strong>
+                    <span class="stat-label">Registrations done</span>
+                </div>
+                <div class="stat-item">
+                    <strong class="stat-number">15K</strong>
+                    <span class="stat-label">Units sold till date</span>
+                </div>
+                <div class="stat-item">
+                    <strong class="stat-number">23K+</strong>
+                    <span class="stat-label">Properties available</span>
                 </div>
             </div>
         </div>
@@ -497,3 +525,4 @@
         });
     </script>
 </body>
+</html>
